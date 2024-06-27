@@ -1,141 +1,155 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #4a00f7;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+ padding: 20px;
+}
+ 
+header {
+  background-color: #222;
+  color: #fff;
+  position: sticky;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  font-size: 21px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+.team {
+  height: 400px;
+  width: 95%;
+  margin-bottom: 0%;
+  background-image: url("https://cdn.suwalls.com/wallpapers/sports/boston-celtics-logo-49624-400x250.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
+.title {
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-item {
+  margin: 10px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.work-item img {
+  width: 300px;
+  height: auto;
+}
+
+.work-item.active img {
+  transform: scale(1.1);
+}
+
+.work-item:hover {
+  transform: translateY(-5px);
+}
+
+.contacts {
+  list-style-type: none;
+  display: flex;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 90%;
+    padding: 10px;
   }
-  
+
   header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 5px 0;
   }
-  
-  .header-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
+
   .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
   }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-  }
-  
+
   nav ul li {
-    margin-right: 20px;
+    margin-right: 10px;
   }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    opacity: 0.7;
-  }
-  
-  .section {
-    padding: 40px 0;
-  }
-  
-  .section h2 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .work-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
+
   .work-item {
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    transition: transform 0.3s ease;
+    width: 45%;
   }
-  
-  .work-item img {
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .avatar {
+    width: 60px;
+    height: 60px;
   }
-  
-  .work-item.active img {
-    transform: scale(1.1);
+
+  .work-item {
+    width: 100%;
   }
-  
-  .work-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    margin-top: 40px;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 0.8rem;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .container {
-      width: 90%;
-      padding: 10px;
-    }
-  
-    header {
-      padding: 5px 0;
-    }
-  
-    .avatar {
-      width: 80px;
-      height: 80px;
-    }
-  
-    nav ul li {
-      margin-right: 10px;
-    }
-  
-    .work-item {
-      width: 45%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .avatar {
-      width: 60px;
-      height: 60px;
-    }
-  
-    .work-item {
-      width: 100%;
-    }
-  }
-  
+}
